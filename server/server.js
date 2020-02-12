@@ -24,7 +24,7 @@ app.get('/api/calculateTotalPrice', (req, res) => {
     checkout.add(item)
   })
 
-  const total = {total: checkout.total()};
+  const total = { total: checkout.total() };
   res.send(total)
 });
 

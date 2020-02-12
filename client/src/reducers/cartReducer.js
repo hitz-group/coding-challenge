@@ -1,11 +1,10 @@
 import * as types from '../actions/actionTypes';
-import * as cartActions from '../actions/cartActions'
-import Cookie from 'js-cookie'
 
 const DEFAULT_SCHEMA = {
   cart: [],
   isLoading: false,
   error: null,
+  grandTotal: 0,
 }
 
 export default function cartReducer(state = DEFAULT_SCHEMA, action) {

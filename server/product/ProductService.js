@@ -1,4 +1,4 @@
-const productDetails = require('./productDetails')
+const productDetails = require('./ProductDetails')
 
 class ProductService {
   static getAllProducts() {

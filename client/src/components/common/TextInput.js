@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const TextInput = ({name, label, onChange, placeholder, value, error, min}) => {
+const TextInput = ({ name, label, onChange, placeholder, value, error, min }) => {
   let wrapperClass = 'form-group'
   if (error && error.length > 0) {
     wrapperClass += " " + 'has-error'
@@ -17,8 +17,8 @@ const TextInput = ({name, label, onChange, placeholder, value, error, min}) => {
           className="form-control"
           placeholder={placeholder}
           value={value}
-          onChange={onChange}/>
-          min={min}
+          onChange={onChange} />
+        min={min}
         {error && <div className="alert alert-danger">{error}</div>}
       </div>
     </div>

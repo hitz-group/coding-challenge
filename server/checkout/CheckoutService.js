@@ -1,5 +1,5 @@
 const Product = require('../product/Product')
-const productDetails = require('../product/productDetails')
+const productDetails = require('../product/ProductDetails')
 const products = productDetails.products
 
 class CheckoutService {

@@ -1,6 +1,5 @@
 import * as types from '../actions/actionTypes';
 
-
 const DEFAULT_SCHEMA = {
   products: [],
   isLoading: false,

@@ -60,7 +60,6 @@ export class ProductPage extends React.Component {
     if (isLoading) {
       return <Loader />
     }
-    const ref = c => this.selectInput = c
 
     return (
       <div>

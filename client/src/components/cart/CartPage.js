@@ -1,8 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 import Cookie from 'js-cookie'
-import {bindActionCreators} from 'redux'
+import { bindActionCreators } from 'redux'
 import * as cartActions from '../../actions/cartActions'
 import CartItemList from './CartItemList'
 import Loader from '../common/Loader'
@@ -52,26 +52,21 @@ export class CartPage extends React.Component {
   }
 
   render() {
-    const {cart, isLoading, grandTotal} = this.props
+    const { cart, isLoading, grandTotal } = this.props
     if (isLoading) {
       return <Loader />
     } else if (cart && cart.length === 0) {
       return <h3 className="cart__title--empty">There are no items in your cart at the moment.</h3>
     }
 
-    const grantTotal = cart.reduce((amount, item) => {
-      amount = amount + parseFloat(item.total)
-      return amount
-    },0)
-
     return (
-       <CartItemList
-         cart={cart}
-         onQuantityIncrease={this.onQuantityIncrease}
-         onQuantityDecrease={this.onQuantityDecrease}
-         onDestroy={this.onDestroy}
-         grandTotal = {grandTotal.toFixed(2)}
-       />
+      <CartItemList
+        cart={cart}
+        onQuantityIncrease={this.onQuantityIncrease}
+        onQuantityDecrease={this.onQuantityDecrease}
+        onDestroy={this.onDestroy}
+        grandTotal={grandTotal.toFixed(2)}
+      />
     )
   }
 }

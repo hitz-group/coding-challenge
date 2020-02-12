@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import CartItem from './CartItem'
 
-const CartItemList = ({cart, onDestroy, onQuantityIncrease, onQuantityDecrease, grandTotal}) => {
+const CartItemList = ({ cart, onDestroy, onQuantityIncrease, onQuantityDecrease, grandTotal }) => {
   return (
     <div className="main-content__cart-container">
       <h2 className="cart-title">Your shopping cart</h2>

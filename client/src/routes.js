@@ -1,8 +1,8 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import App from './App' //eslint-disable-line import/no-named-as-default
-import ProductPage from './components/product/ProductPage' //eslint-disable-line import/no-named-as-default
-import CartPage from './components/cart/CartPage' //eslint-disable-line import/no-named-as-default
+import App from './App'
+import ProductPage from './components/product/ProductPage'
+import CartPage from './components/cart/CartPage'
 
 export default (
 

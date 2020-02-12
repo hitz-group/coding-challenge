@@ -1,4 +1,4 @@
-import Checkout from './checkout'
+import Checkout from './Checkout'
 import PricingRules from '../customer/PricingRules'
 
 describe('Checkout', () => {

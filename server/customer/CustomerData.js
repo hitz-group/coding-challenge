@@ -1,4 +1,4 @@
-const productDetails = require('../product/productDetails')
+const productDetails = require('../product/ProductDetails')
 const Customer = require('./Customer')
 const adTypes = productDetails.adTypes
 

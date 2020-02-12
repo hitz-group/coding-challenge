@@ -25,7 +25,7 @@ const Header = ({ cart }) => {
       <nav>
         <NavLink exact to="/" activeClassName="active">Product</NavLink>
         {" | "}
-        <NavLink to="/cart" activeClassName="active">Cart ({cart && cart.length || 0})</NavLink>
+        <NavLink to="/cart" activeClassName="active">Cart ({cart ? cart.length : 0})</NavLink>
       </nav>
     </div>
   )

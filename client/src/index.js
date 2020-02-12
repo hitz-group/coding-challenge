@@ -1,11 +1,11 @@
 /*eslint-disable import/default */
 import 'babel-polyfill'
 import React from 'react'
-import {render} from 'react-dom'
+import { render } from 'react-dom'
 import configureStore from './store/configureStore'
-import {Provider} from 'react-redux'
+import { Provider } from 'react-redux'
 import { BrowserRouter } from 'react-router-dom'
-import {loadProducts} from './actions/productActions'
+import { loadProducts } from './actions/productActions'
 import './styles/styles.css'
 
 import routes from './routes'
@@ -18,5 +18,5 @@ render(
       {routes}
     </BrowserRouter>
   </Provider>,
-  document.getElementById('app')
+  document.getElementById('root')
 )

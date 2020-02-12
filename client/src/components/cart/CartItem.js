@@ -10,26 +10,26 @@ export default class CartItem extends React.Component {
   }
   constructor(props) {
     super(props);
-    this.state = {value: ''}
+    this.state = { value: '' }
     this.handleDecrease = this.handleDecrease.bind(this)
     this.handleIncrease = this.handleIncrease.bind(this)
     this.handleDestroy = this.handleDestroy.bind(this)
   }
   handleDecrease() {
-    const {item} = this.props
+    const { item } = this.props
     this.props.onQuantityDecrease(item.sku, item.quantity)
   }
   handleIncrease() {
-    const {item} = this.props
+    const { item } = this.props
     this.props.onQuantityIncrease(item.sku, parseInt(item.quantity))
   }
   handleDestroy() {
-    const {item} = this.props
+    const { item } = this.props
     this.props.onDestroy(item.sku)
   }
 
   render() {
-    const {item} = this.props
+    const { item } = this.props
     return (
       <div className="main-content__item-wrapper">
         <span className="item-col">
